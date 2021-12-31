@@ -2,8 +2,11 @@
 <html lang="en-IN">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta name="author" content="Abhinav Thapa">
+    <meta name="description" content="Buisness Website">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="team.png" />
     <title>Webpage Using Only HTML</title>
 </head>
 
@@ -12,37 +15,39 @@
         <tr>
             <td align="left">
                 <!--Header black block of home about us etc-->
-                <table width="547" border="0" align="center" cellspacing="1" cellpadding="1">
-                    <td width="96">
-                        <font face="Verdana, Geneva, sans-serif" color="white">
-                            <h3>Home</h3>
-                        </font>
-                    </td>
-                    <td width="96">
-                        <font face="Verdana, Geneva, sans-serif" color="white">
-                            <h3>About</h3>
-                        </font>
-                    </td>
-                    <td width="96">
-                        <font face="Verdana, Geneva, sans-serif" color="white">
-                            <h3>Services</h3>
-                        </font>
-                    </td>
-                    <td width="96">
-                        <font face="Verdana, Geneva, sans-serif" color="white">
-                            <h3>Clients</h3>
-                        </font>
-                    </td>
-                    <td width="96">
-                        <font face="Verdana, Geneva, sans-serif" color="white">
-                            <h3>Contact</h3>
-                        </font>
-                    </td>
+                <header>
+                    <table width="80%" border="0" align="center" cellspacing="1" cellpadding="1">
+                        <td width="96">
+                            <font face="Verdana" color="white">
+                                <h3 title="Home">Home</h3>
+                            </font>
+                        </td>
+                        <td width="96">
+                            <font face="Verdana, Geneva, sans-serif" color="white">
+                                <h3 title="About">About</h3>
+                            </font>
+                        </td>
+                        <td width="96">
+                            <font face="Verdana, Geneva, sans-serif" color="white">
+                                <h3 title="Services">Services</h3>
+                            </font>
+                        </td>
+                        <td width="96">
+                            <font face="Verdana, Geneva, sans-serif" color="white">
+                                <h3 title="Clients">Clients</h3>
+                            </font>
+                        </td>
+                        <td width="96">
+                            <font face="Verdana, Geneva, sans-serif" color="white">
+                                <h3 title="Contact">Contact</h3>
+                            </font>
+                        </td>
 
-                </table>
+                    </table>
+                </header>
 
                 <!--Second Grey Box of contact us etc-->
-                <table width="100%" height="150" border="0" cellspacing="5" cellpadding="5" bgcolor="grey">
+                <table background="Second.jpg" width="100%" height="150" border="0" cellspacing="5" cellpadding="5" bgcolor="grey">
                     <tr>
 
                         <td align="center">
@@ -74,7 +79,7 @@
                             <table width="600" border="0" cellspacing="1" cellpadding="1">
                                 <tr>
                                     <td align="center">
-                                        <img src="Office.jpg" width="980" height="300" />
+                                        <img src="Office.jpg" alt="This image cannot be loaded" width="980" height="300" />
                                     </td>
                                 </tr>
                             </table>
@@ -84,7 +89,7 @@
                 </table>
 
                 <!--This is my company header box-->
-                <table width="100%" height="82" border="0" cellspacing="5" cellpadding="5" bgcolor="white">
+                <table background="paper.jpg" width="100%" height="82" border="0" cellspacing="5" cellpadding="5" bgcolor="white">
                     <tr>
                         <td height="72" align="center" valign="top">
                             <table width="730" border="0" cellspacing="1" cellpadding="1">
@@ -100,7 +105,7 @@
                 </table>
 
                 <!--Contact us and Newsletter-->
-                <table align="center" width="100%" height="236" border="0" cellspacing="5" cellpadding="5" bgcolor="white">
+                <table background="paper.jpg" align="center" width="100%" height="236" border="0" cellspacing="5" cellpadding="5" bgcolor="white">
                     <tr>
                         <td height="72" align="center" valign="top">
                             <table width="313" border="0" cellspacing="3" cellpadding="3" bgcolor="orange">
@@ -116,9 +121,9 @@
                                         <font color="black" size="2" face="Verdana, Geneva, sans-serif">
                                             <strong>Register for our newsletter!</strong>
                                         </font><br/>
-                                        <form name="contact" method="post" action="send.php">
+                                        <form enctype="multipart/form-data" name="contact" method="post" action="send.php">
                                             <input type="email" name="mailid" />
-                                            <input type="button" name="button" value="Submit" />
+                                            <input title="Submit" type="button" name="button" value="Submit" />
                                         </form>
                                     </td>
                                 </tr>
@@ -128,7 +133,7 @@
                 </table>
 
                 <!--Three columns of about services etc etc-->
-                <table align="center" width="100%" height="236" border="0" cellspacing="5" cellpadding="5" bgcolor="white">
+                <table background="white.jpg" align="center" width="100%" height="236" border="0" cellspacing="5" cellpadding="5" bgcolor="white">
                     <tr>
                         <td height="72 " align="center " valign="top">
                             <table align="center" width="900" border="1" bordercolor="grey" cellspacing="0" cellpadding="8">
@@ -182,12 +187,14 @@
                 <!--Footer-->
                 <table width="100%" height="60" boder="0" cellspacing="5" cellpadding="5" bgcolor="black">
                     <tr>
-                        <td align="center">
-                            <font face="Verdana, Geneva, sans-serif" color="white">
-                                Home - About - Services - Clients - Contact<br/>
-                                <br/> &copy 2021 by Abhinav Thapa
-                            </font>
-                        </td>
+                        <footer>
+                            <td align="center">
+                                <font face="Verdana, Geneva, sans-serif" color="white">
+                                    Home - About - Services - Clients - <a href="mailto:abhinavthapa1998@gmail.com">Contact</a><br/>
+                                    <br/> &copy 2021 by Abhinav Thapa
+                                </font>
+                            </td>
+                        </footer>
                     </tr>
                 </table>
             </td>
